@@ -1,0 +1,521 @@
+:root {
+  --bg: #ffffff;
+  --card: #f8fafb;
+  --text: #111827;
+  --muted: #6b7280;
+  --accent: #0ea5a4;
+}
+
+/* Reset dasar untuk konsistensi */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container standar tengah */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* HEADER (atas) */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.logo .accent {
+  color: var(--accent);
+}
+
+/* Navigasi menu */
+.main-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  padding: 0.5rem;
+  color: var(--muted);
+  transition: 0.2s;
+  border-radius: 6px;
+}
+
+.main-nav a:hover {
+  color: var(--accent);
+  background: rgba(14, 165, 164, 0.06);
+}
+
+/* Tombol menu hamburger (muncul di HP) */
+.nav-toggle {
+  display: none;
+  font-size: 1.3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* BANNER FULL 1 GAMBAR */
+.banner-full {
+  width: 100%;
+  height: 420px;
+  background-image: url("../images/banner-full.jpg"); /* ganti nama gambar */
+  background-size: cover; /* isi penuh */
+  background-position: center; /* fokus tengah */
+  background-repeat: no-repeat;
+  border-radius: 0;
+  position: relative;
+}
+
+/* Overlay teks */
+.banner-overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  padding: 1.2rem 1.5rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.banner-overlay h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.banner-overlay p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .banner-full {
+    height: 320px;
+  }
+  .banner-overlay {
+    padding: 1rem;
+  }
+  .banner-overlay h1 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Teks hero */
+.hero-text {
+  margin-top: -60px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 1rem;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 10px 24px rgba(2, 6, 23, 0.08);
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.55rem 1rem;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+/* SECTION UMUM */
+.section {
+  padding: 1.4rem 0;
+}
+
+/* Kartu kotak */
+.card {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.05);
+}
+
+/* Info cepat berupa list */
+.quick-info {
+  margin-top: 0.5rem;
+  list-style: none;
+  color: var(--muted);
+}
+
+.quick-info li {
+  margin-top: 0.4rem;
+}
+
+/* GRID OBYEK WISATA */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.grid-3 img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* PAKET WISATA */
+.packages {
+  margin-top: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.package {
+  display: flex;
+  gap: 1rem;
+  background: #fff;
+  padding: 0.9rem;
+  border-radius: 12px;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.04);
+}
+
+.package img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.package .price {
+  margin-top: 0.3rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* VIDEO PROMOSI */
+.video-wrap iframe {
+  width: 100%;
+  height: 420px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.06);
+}
+
+/* GALERI */
+.masonry {
+  column-count: 4;
+  column-gap: 1rem;
+}
+
+.m-item {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  break-inside: avoid;
+  cursor: zoom-in;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06);
+  transition: 0.25s;
+}
+
+.m-item:hover {
+  transform: scale(1.03);
+}
+
+/* MAPS */
+.map {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+}
+
+/* FOOTER */
+.site-footer {
+  padding: 1.2rem 0;
+  text-align: center;
+  color: var(--muted);
+  border-top: 1px solid #eee;
+}
+
+/* TOMBOL DARK MODE & WA BUTTON */
+.dark-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 9px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 90;
+}
+
+.wa-btn {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  background: #25d366;
+  color: white;
+  padding: 13px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 22px;
+  z-index: 90;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.15);
+  transition: 0.2s;
+}
+
+.wa-btn:hover {
+  transform: scale(1.08);
+}
+
+/* ANIMASI SCROLL (REVEAL) */
+.anim {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.7s ease;
+}
+
+.inview {
+  opacity: 1;
+  transform: none;
+}
+
+/* DARK MODE STYLE */
+body.dark-mode {
+  background: #0b1020;
+  color: #e6eef6;
+}
+
+body.dark-mode .card {
+  background: #111a2b;
+}
+
+body.dark-mode .hero-text {
+  background: rgba(18, 24, 38, 0.85);
+}
+
+body.dark-mode .site-header {
+  background: rgba(10, 10, 17, 0.85);
+  border-bottom-color: #1e2433;
+}
+
+body.dark-mode .m-item {
+  box-shadow: none;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1000px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 750px) {
+  /* Tampilkan tombol hamburger */
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Sembunyikan menu utama */
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    background: var(--bg);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(2, 6, 23, 0.08);
+    position: absolute;
+    right: 1rem;
+    top: 60px;
+  }
+
+  /* Tampilkan menu ketika .show diaktifkan JS */
+  .main-nav.show {
+    display: flex;
+  }
+
+  .banner-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .banner-item.tall {
+    grid-column: span 3;
+  }
+
+  .banner-item.wide {
+    grid-column: span 6;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .packages {
+    grid-template-columns: 1fr;
+  }
+
+  .video-wrap iframe {
+    height: 300px;
+  }
+
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .masonry {
+    column-count: 1;
+  }
+
+  .banner-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .banner-item.tall {
+    min-height: 240px;
+  }
+
+  .banner-item {
+    min-height: 140px;
+  }
+
+  .video-wrap iframe {
+    height: 220px;
+  }
+}
+
+/* Form Pemesanan */
+.form-pesan {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.form-pesan input,
+.form-pesan select,
+.form-pesan textarea {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.form-pesan input:focus,
+.form-pesan textarea:focus,
+.form-pesan select:focus {
+  outline: 2px solid var(--accent);
+  border-color: var(--accent);
+}
+
+.form-pesan button {
+  margin-top: 0.4rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER MEDIA SOSIAL (SVG ICONS) */
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 0.9rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.06);
+  transition: 0.25s ease;
+  color: var(--text);
+}
+
+.social-link:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Dark mode support */
+body.dark-mode .social-link {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+}
+
+body.dark-mode .social-link:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* WHATSAPP FLOATING BUTTON */
+
+.wa-btn {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  background: #25d366;
+  padding: 13px;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 90;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.wa-btn:hover {
+  transform: scale(1.1);
+}
+
+.wa-icon {
+  width: 28px;
+  height: 28px;
+}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Situ Cipanten • Wisata Majalengka</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Tombol Mode Gelap -->
+    <button id="darkToggle" class="dark-toggle">🌙</button>
+
+    <!-- Tombol WhatsApp -->
+    <a
+      href="https://wa.me/6281234567890"
+      class="wa-btn"
+      target="_blank"
+      aria-label="Chat WhatsApp"
+    >
+      <svg class="wa-icon" viewBox="0 0 32 32">
+        <path
+          fill="#FFFFFF"
+          d="M16.04 3C9.4 3 4 8.4 4 15.05c0 2.64.86 5.1 
+      2.32 7.1L4 29l7.1-2.28A12.06 12.06 0 0 0 
+      16.04 27C22.68 27 28 21.65 28 15.04 28 
+      8.4 22.68 3 16.04 3zm6.84 17.53c-.29.82-1.7 
+      1.56-2.36 1.66-.63.1-1.43.14-2.31-.14-.54-.17-1.24-.4-2.13-.79-3.74-1.63-6.17-5.42-6.36-5.67-.18-.24-1.52-2.03-1.52-3.87 
+      0-1.85.98-2.76 1.34-3.15.36-.39.79-.49 1.05-.49.26 
+      0 .53 0 .76.01.25.01.58-.09.91.7.34.82 1.16 2.84 1.26 
+      3.04.1.2.17.44.03.68-.13.24-.2.39-.39.6-.2.22-.41.49-.58.66-.19.19-.38.39-.17.76.2.36.9 
+      1.48 1.94 2.41 1.34 1.17 2.47 1.53 2.84 1.71.37.19.59.16.82-.1.22-.26.95-1.11 
+      1.2-1.49.25-.39.51-.32.86-.19.36.12 2.27 1.07 
+      2.66 1.26.39.2.65.29.75.45.1.17.1.97-.18 1.8z"
+        />
+      </svg>
+    </a>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <!-- Logo -->
+        <div class="logo">SITU <span class="accent">CIPANTEN</span></div>
+
+        <!-- Navigasi -->
+        <nav id="mainNav" class="main-nav">
+          <a href="#home">Beranda</a>
+          <a href="#about">Tentang</a>
+          <a href="#obyek">Obyek Wisata</a>
+          <a href="#fasilitas">Fasilitas</a>
+          <a href="#paket">Paket</a>
+          <a href="#galeri">Galeri</a>
+          <a href="#pemesanan">Pemesanan</a>
+        </nav>
+
+        <!-- Tombol menu (untuk HP) -->
+        <button id="navToggle" class="nav-toggle">☰</button>
+      </div>
+    </header>
+
+    <!-- ================= BANNER / HERO ================= -->
+    <section id="home" class="banner-full">
+      <div class="banner-overlay">
+        <h1>Selamat Datang di Situ Cipanten</h1>
+        <p>Destinasi wisata air jernih & spot foto terbaik di Majalengka.</p>
+        <a href="#paket" class="btn-primary">Lihat Paket Wisata</a>
+      </div>
+    </section>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="container main-content">
+      <!-- Tentang -->
+      <section id="about" class="section card anim">
+        <h2>Tentang Situ Cipanten</h2>
+        <p>
+          Situ Cipanten merupakan objek wisata populer yang menawarkan
+          kejernihan air, spot foto aesthetic, dan lingkungan yang asri.
+        </p>
+
+        <ul class="quick-info">
+          <li>
+            <strong>Alamat:</strong> Jl. Gn. Kuning - Sindang, Gn. Kuning, Kec.
+            Sindang, Kabupaten Majalengka, Jawa Barat 45471
+          </li>
+          <li><strong>Jam buka:</strong> 08.00 - 17.00</li>
+          <li><strong>Tiket masuk:</strong> Rp 10.000 - 15.000</li>
+        </ul>
+      </section>
+
+      <!-- Obyek Wisata -->
+      <section id="obyek" class="section anim">
+        <h2>Obyek Wisata</h2>
+
+        <div class="grid-3">
+          <article class="card hover">
+            <img src="images/obyek1.jpg" alt="Perahu Dayung" />
+            <h3>Perahu Dayung</h3>
+          </article>
+
+          <article class="card hover">
+            <img src="images/obyek2.jpg" alt="Ayunan Air" />
+            <h3>Ayunan Di Atas Air</h3>
+          </article>
+
+          <article class="card hover">
+            <img src="images/obyek3.jpg" alt="Area Piknik" />
+            <h3>Sepeda Gantung</h3>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===================== FASILITAS ===================== -->
+      <section id="fasilitas" class="section anim">
+        <h2>Fasilitas</h2>
+
+        <div class="grid-3">
+          <article class="card hover">
+            <img src="images/fasilitas1.jpg" alt="Area Parkir Luas" />
+            <h3>Area Parkir Luas</h3>
+            <p>Area parkir untuk mobil & motor, aman dan teratur.</p>
+          </article>
+
+          <article class="card hover">
+            <img src="images/fasilitas2.jpg" alt="Gazebo Santai" />
+            <h3>Akses Renang</h3>
+            <p>
+              Area khusus renang dengan air jernih dan aman untuk wisata
+              keluarga.
+            </p>
+          </article>
+
+          <article class="card hover">
+            <img src="images/fasilitas3.jpg" alt="Toilet & Mushola" />
+            <h3>Spot Foto Instagramable</h3>
+            <p>Spot foto yang dikelilingi dengan ikan.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Paket Wisata -->
+      <section id="paket" class="section card anim">
+        <h2>Paket Wisata</h2>
+
+        <div class="packages">
+          <div class="package hover">
+            <img src="images/paket1.jpg" alt="Paket Keluarga" />
+            <div>
+              <h3>Paket Keluarga</h3>
+              <p>Perahu + pemandu (2 jam).</p>
+              <p class="price">Rp 75.000 / keluarga</p>
+            </div>
+          </div>
+
+          <div class="package hover">
+            <img src="images/paket2.jpg" alt="Paket Foto" />
+            <div>
+              <h3>Paket Foto</h3>
+              <p>Spot foto + dokumentasi.</p>
+              <p class="price">Rp 150.000</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Promo -->
+      <section class="section anim">
+        <h2>Video Promosi</h2>
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/HepVRof4t3E?si=XJADBlnikdBa-87y"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Galeri -->
+      <section id="galeri" class="section anim">
+        <h2>Galeri Foto</h2>
+
+        <div class="masonry">
+          <img src="images/situ1.jpg" class="m-item" />
+          <img src="images/situ2.jpg" class="m-item" />
+          <img src="images/situ3.jpg" class="m-item" />
+          <img src="images/situ4.jpg" class="m-item" />
+          <img src="images/galeri1.jpg" class="m-item" />
+          <img src="images/galeri2.jpg" class="m-item" />
+          <img src="images/galeri3.jpg" class="m-item" />
+          <img src="images/galeri4.jpg" class="m-item" />
+        </div>
+      </section>
+
+      <!-- ===================== PEMESANAN ===================== -->
+      <section id="pemesanan" class="section card anim">
+        <h2>Pemesanan Tiket / Paket Wisata</h2>
+
+        <form id="formPemesanan" class="form-pesan">
+          <label>Nama Lengkap</label>
+          <input
+            type="text"
+            id="nama"
+            required
+            placeholder="Masukkan nama Anda"
+          />
+
+          <label>Nomor WhatsApp</label>
+          <input
+            type="tel"
+            id="wa"
+            required
+            placeholder="Contoh: 08123456789"
+          />
+
+          <label>Pilih Paket Wisata</label>
+          <select id="paket" required>
+            <option value="">-- Pilih Paket --</option>
+            <option value="Paket Keluarga">Paket Keluarga (Rp 75.000)</option>
+            <option value="Paket Foto">Paket Foto (Rp 150.000)</option>
+          </select>
+
+          <label>Tanggal Kunjungan</label>
+          <input type="date" id="tanggal" required />
+
+          <label>Catatan Tambahan</label>
+          <textarea
+            id="catatan"
+            rows="3"
+            placeholder="Jumlah orang, permintaan khusus, dsb"
+          ></textarea>
+
+          <button type="submit" class="btn-primary">
+            Kirim Pemesanan via WhatsApp
+          </button>
+        </form>
+
+        <br /><br />
+
+        <h2>Lokasi Situ Cipanten</h2>
+        <iframe
+          src="https://www.google.com/maps?q=Situ+Cipanten+Majalengka&output=embed"
+          class="map"
+        ></iframe>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-social">
+        <!-- Instagram -->
+        <a href="https://instagram.com" target="_blank" class="social-link">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2c1.654 0 3 1.346 3 3s-1.346 3-3 3a3 3 0 110-6zm4.5-.75a1.25 1.25 0 11-.001 2.501A1.25 1.25 0 0116.5 8.25z"
+            />
+          </svg>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://tiktok.com" target="_blank" class="social-link">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12.5 2h3a5.5 5.5 0 005.5 5.5v3A8.5 8.5 0 0115.5 6h-1v9a5 5 0 11-5-5 5 5 0 012.5.7V2z"
+            />
+          </svg>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://facebook.com" target="_blank" class="social-link">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13 2h3v4h-3v3h3v4h-3v9h-4v-9H7v-4h2V5.5A3.5 3.5 0 0112.5 2H13z"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <p>© <span id="year"></span> Situ Cipanten • Majalengka</p>
+    </footer>
+
+    <!-- File JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
