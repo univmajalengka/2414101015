@@ -1,0 +1,129 @@
+/* Import Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+:root {
+  --primary-green: #2e8b57;
+  --hover-green: #1e5638;
+  --bg-sand: #f8f9fa;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-sand);
+}
+
+/* Navbar */
+.navbar-custom {
+  background-color: var(--primary-green) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Hero Banner */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+/* Card Paket */
+.card-wisata {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  background: white;
+}
+.card-wisata:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Video Container Responsive */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-alam {
+  background-color: var(--primary-green);
+  color: white;
+  border-radius: 50px;
+}
+.btn-alam:hover {
+  background-color: var(--hover-green);
+  color: white;
+}
+
+/* Footer Revisi (Background Gelap & Link Bersih) --- */
+
+.footer-alam {
+  background-color: #1e5638;
+
+  color: #ffffff;
+
+  padding-top: 60px;
+  padding-bottom: 20px;
+  margin-top: 80px;
+}
+
+.footer-alam h5 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-alam p,
+.footer-alam li,
+.footer-alam small {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-link {
+  color: #ffffff !important;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffc107 !important;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.footer-bottom {
+  background-color: #143d26;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #aaaaaa;
+}
